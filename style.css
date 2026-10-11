@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --principal-bg: #1a1b21;
+  --azul-enfasis: #38bdf8;
+  --blanco: #fff;
+  --text-body: #e2e2e9;
+}

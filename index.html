@@ -1,0 +1,94 @@
+<!-- breakpoints
+  sm 	40rem (640px)	@media (width >= 40rem) { ... }
+  md	48rem (768px)	@media (width >= 48rem) { ... }
+  lg	64rem (1024px)	@media (width >= 64rem) { ... }
+  xl	80rem (1280px)	@media (width >= 80rem) { ... }
+  2xl	96rem (1536px)
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Daikell</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- CDN Tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-(--principal-bg) text-(--text-body)">
+    <header class="w-screen shadow-lg shadow-black/20 py-3">
+      <nav
+        class="w-full flex sm:justify-between sm:px-4 md:justify-around md:px-0 md:gap-6 lg:justify-center lg:gap-10 lg:max-w-313 lg:mx-auto"
+      >
+        <div class="flex items-center gap-3 pl-2.5 lg:w-1/3">
+          <span class="material-symbols-outlined"> code_xml </span>
+
+          <div class="flex flex-col">
+            <h2 class="font-bold text-[20px]">Daikell Dominguez</h2>
+            <span class="uppercase text-sm tracking-wider"
+              >Full Stack Developer</span
+            >
+          </div>
+        </div>
+        <div
+          class="hidden sm:flex sm:items-center sm:gap-2 sm:text-sm md:flex-1 md:text-[16px] md:justify-evenly md:max-w-150"
+        >
+          <span
+            class="bg-gray-500 p-2 rounded-md cursor-pointer hover:bg-gray-300 hover:text-gray-800 transition duration-400"
+            >Presentación</span
+          >
+          <span
+            class="bg-gray-500 p-2 rounded-md cursor-pointer hover:bg-gray-300 hover:text-gray-800 transition duration-400"
+            >Proyectos</span
+          >
+          <span
+            class="bg-gray-500 p-2 rounded-md cursor-pointer hover:bg-gray-300 hover:text-gray-800 transition duration-400"
+            >Tecnologías</span
+          >
+          <span
+            class="bg-gray-500 p-2 rounded-md cursor-pointer hover:bg-gray-300 hover:text-gray-800 transition duration-400"
+            >Contactame</span
+          >
+        </div>
+      </nav>
+    </header>
+    <div
+      class="flex flex-col w-full px-4 gap-3 mt-4 border-red-600 sm:max-w-162 sm:mt-8 sm:mx-auto md:max-w-120 "
+    >
+      <h1 class="hidden sm:inline-block text-4xl font-medium">
+        Daikell Dominguez
+      </h1>
+      <p class="text-(--azul-enfasis)">
+        Especializado en el desarrollo integral de aplicaciones escalables,
+        arquitecturas orientadas a eventos e infraestructura en la nube. Con más
+        de siete años liderando la ingeniería detrás de plataformas críticas y
+        herramientas para desarrolladores, priorizo la confiabilidad, la
+        simplicidad operativa y la experiencia de usuario.
+      </p>
+      <p>
+        Especializado en el desarrollo integral de aplicaciones escalables,
+        arquitecturas orientadas a eventos e infraestructura en la nube. Con más
+        de siete años liderando la ingeniería detrás de plataformas críticas y
+        herramientas para desarrolladores, priorizo la confiabilidad, la
+        simplicidad operativa y la experiencia de usuario.
+      </p>
+      <a
+        class="w-full max-w-100 py-2.5 bg-(--azul-enfasis) text-gray-800 text-center font-bold rounded-md mt-4 self-center sm:self-start"
+        href="#"
+        >Ver Proyectos Realizados</a
+      >
+    </div>
+    <figure class="hidden">
+      <img src="#" alt="imagen del desarrollador" />
+    </figure>
+  </body>
+</html>
