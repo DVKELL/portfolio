@@ -24,7 +24,7 @@
     />
   </head>
 
-  <body class="bg-(--principal-bg) text-(--text-body)">
+  <body class="h-screen bg-(--principal-bg) text-(--text-body)">
     <header class="w-screen shadow-lg shadow-black/20 py-3">
       <nav
         class="w-full flex sm:justify-between sm:px-4 md:justify-around md:px-0 md:gap-6 lg:justify-center lg:gap-10 lg:max-w-313 lg:mx-auto"
@@ -61,34 +61,49 @@
         </div>
       </nav>
     </header>
-    <div
-      class="flex flex-col w-full px-4 gap-3 mt-4 border-red-600 sm:max-w-162 sm:mt-8 sm:mx-auto md:max-w-120 "
-    >
-      <h1 class="hidden sm:inline-block text-4xl font-medium">
-        Daikell Dominguez
-      </h1>
-      <p class="text-(--azul-enfasis)">
-        Especializado en el desarrollo integral de aplicaciones escalables,
-        arquitecturas orientadas a eventos e infraestructura en la nube. Con más
-        de siete años liderando la ingeniería detrás de plataformas críticas y
-        herramientas para desarrolladores, priorizo la confiabilidad, la
-        simplicidad operativa y la experiencia de usuario.
-      </p>
-      <p>
-        Especializado en el desarrollo integral de aplicaciones escalables,
-        arquitecturas orientadas a eventos e infraestructura en la nube. Con más
-        de siete años liderando la ingeniería detrás de plataformas críticas y
-        herramientas para desarrolladores, priorizo la confiabilidad, la
-        simplicidad operativa y la experiencia de usuario.
-      </p>
-      <a
-        class="w-full max-w-100 py-2.5 bg-(--azul-enfasis) text-gray-800 text-center font-bold rounded-md mt-4 self-center sm:self-start"
-        href="#"
-        >Ver Proyectos Realizados</a
+
+    <main class="w-full mt-4 md:w-[90%] md:mx-auto lg:max-w-300">
+      <!-- items-center -->
+      <section
+        class="flex justify-between items-center md:mt-8 lg:justify-around"
       >
-    </div>
-    <figure class="hidden">
-      <img src="#" alt="imagen del desarrollador" />
-    </figure>
+        <div
+          class="flex flex-col w-full px-4 gap-3 sm:max-w-162 sm:mx-auto md:max-w-110 md:mx-0"
+        >
+          <h1 class="hidden sm:inline-block text-4xl font-medium">
+            Daikell Dominguez
+          </h1>
+          <p class="text-(--azul-enfasis)">
+            Especializado en el desarrollo integral de aplicaciones escalables,
+            arquitecturas orientadas a eventos e infraestructura en la nube. Con
+            más de siete años liderando la ingeniería detrás de plataformas
+            críticas y herramientas para desarrolladores, priorizo la
+            confiabilidad, la simplicidad operativa y la experiencia de usuario.
+          </p>
+          <p>
+            Especializado en el desarrollo integral de aplicaciones escalables,
+            arquitecturas orientadas a eventos e infraestructura en la nube. Con
+            más de siete años liderando la ingeniería detrás de plataformas
+            críticas y herramientas para desarrolladores, priorizo la
+            confiabilidad, la simplicidad operativa y la experiencia de usuario.
+          </p>
+          <a
+            class="w-full max-w-100 py-2.5 bg-(--azul-enfasis) text-gray-800 text-center font-bold rounded-md mt-4 self-center sm:self-start"
+            href="#"
+            >Ver Proyectos Realizados</a
+          >
+        </div>
+        <!--  max-h-[400px] -->
+        <figure
+          class="hidden shadow-2xl shadow-(color:--azul-enfasis) rounded-md md:overflow-hidden md:block md:w-1/3 md:max-w-83.75"
+        >
+          <img
+            class="w-full h-full object-cover lg:object-contain"
+            src="./assets/daikell.jpg"
+            alt="imagen del desarrollador"
+          />
+        </figure>
+      </section>
+    </main>
   </body>
 </html>
