@@ -30,5 +30,321 @@
     ></script>
   </head>
 
-  <body class="h-screen bg-(--principal-bg) text-(--text-body)"></body>
+  <body class="h-screen bg-(--principal-bg) text-(--text-blanco)">
+    <!-- BARRA DE NAVEGACION -->
+    <header class="w-full border-b border-b-(--borde-color) sticky">
+      <nav class="w-full flex justify-between max-w-250 mx-auto p-5 lg:px-0">
+        <!-- DIV DAIKELL.DEV -->
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-(--cyan-neon)">
+            code_xml
+          </span>
+          <span class="font-semibold text-lg">
+            daikell
+            <span class="text-(--cyan-neon) font-bold">.dev</span></span
+          >
+        </div>
+
+        <!-- DIV DE NAVEGACION -->
+        <div
+          class="hidden md:w-full max-w-130 md:flex md:justify-between md:items-center md:text-sm md:gap-2.5 lg:text-[15px]"
+        >
+          <a
+            class="text-(--text-gris) hover:text-(--text-blanco) cursor-pointer"
+          >
+            Sobre mi
+          </a>
+          <a
+            class="text-(--text-gris) hover:text-(--text-blanco) cursor-pointer"
+          >
+            Proyectos
+          </a>
+          <a
+            class="text-(--text-gris) hover:text-(--text-blanco) cursor-pointer"
+          >
+            Tecnologías
+          </a>
+          <a
+            class="text-(--text-gris) hover:text-(--text-blanco) cursor-pointer"
+          >
+            Contacto
+          </a>
+
+          <a
+            class="flex gap-2.5 items-center text-(--text-blanco) py-1.5 px-2 border border-(--borde-color) rounded-md cursor-pointer hover:bg-(--borde-color) hover:text-(--text-blanco) transition-colors"
+          >
+            Hablemos
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="18px"
+              viewBox="48 -912 864 864"
+              width="18px"
+              fill="#f0f2f4"
+            >
+              <path
+                d="m243-192-51-51 429-429H384v-72h360v360h-72v-237L243-192Z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- MENU HAMBURGUESA -->
+        <div class="md:hidden">
+          <i class="fa-solid fa-bars text-xl cursor-pointer"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- SECCION SOBRE MI -->
+      <section>
+        <div>
+          <h1>Hola, soy Daikell. Desarrollador web</h1>
+          <p>Ideas que se convierten en experiencias.</p>
+          <p>
+            Me apasiona conectar diseño y tecnología para crear aplicaciones web
+            intuitivas, funcionales y con personalidad. Cada línea de código es
+            una oportunidad para construir algo mejor.
+          </p>
+
+          <!-- EXPLORAR PROYECTOS Y HABLEMOS -->
+          <div>
+            <a href="#"
+              >Exporar proyectos
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16px"
+                viewBox="48 -912 864 864"
+                width="16px"
+                fill="#8b8f97"
+              >
+                <path
+                  d="m243-192-51-51 429-429H384v-72h360v360h-72v-237L243-192Z"
+                />
+              </svg>
+            </a>
+            <a href="#">
+              Hablemos
+              <i class="fa-solid fa-arrow-right-long text-[16px]"></i>
+            </a>
+          </div>
+
+          <!-- Encuentrame en -->
+          <div>
+            <span>Encuéntrame en git, in, ig</span>
+          </div>
+        </div>
+
+        <!-- IMAGEN -->
+        <figure>
+          <img src="#" alt="foto mia" />
+        </figure>
+      </section>
+      <hr />
+
+      <!-- PROYECTOS REALIZADOS -->
+      <section>
+        <!-- TEXTOS -->
+        <div>
+          <div>
+            <span>---- 01 / Trabajo Seleccionado</span>
+            <h2>Proyectos realizados</h2>
+            <span>Una selección de ideas que llevé del concepto al código</span>
+          </div>
+          <div>
+            <span>Todos los proyectos</span>
+          </div>
+        </div>
+
+        <!-- GRID CONTAINER -->
+        <div class="grid grid-cols-1">
+          <!-- ITEM -->
+          <div class="flex flex-col">
+            <figure>
+              <img src="#" alt="img del proyecto" />
+            </figure>
+            <div>
+              <span>tipo de proyecto</span>
+              <h3>Titulo</h3>
+              <p>descripcion</p>
+              <div class="flex">
+                <span>tecnologías</span>
+                <span>tecnologías</span>
+                <span>tecnologías</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <figure>
+              <img src="#" alt="img del proyecto" />
+            </figure>
+            <div>
+              <span>tipo de proyecto</span>
+              <h3>Titulo</h3>
+              <p>descripcion</p>
+              <div class="flex">
+                <span>tecnologías</span>
+                <span>tecnologías</span>
+                <span>tecnologías</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <figure>
+              <img src="#" alt="img del proyecto" />
+            </figure>
+            <div>
+              <span>tipo de proyecto</span>
+              <h3>Titulo</h3>
+              <p>descripcion</p>
+              <div class="flex">
+                <span>tecnologías</span>
+                <span>tecnologías</span>
+                <span>tecnologías</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <figure>
+              <img src="#" alt="img del proyecto" />
+            </figure>
+            <div>
+              <span>tipo de proyecto</span>
+              <h3>Titulo</h3>
+              <p>descripcion</p>
+              <div class="flex">
+                <span>tecnologías</span>
+                <span>tecnologías</span>
+                <span>tecnologías</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <figure>
+              <img src="#" alt="img del proyecto" />
+            </figure>
+            <div>
+              <span>tipo de proyecto</span>
+              <h3>Titulo</h3>
+              <p>descripcion</p>
+              <div class="flex">
+                <span>tecnologías</span>
+                <span>tecnologías</span>
+                <span>tecnologías</span>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <figure>
+              <img src="#" alt="img del proyecto" />
+            </figure>
+            <div>
+              <span>tipo de proyecto</span>
+              <h3>Titulo</h3>
+              <p>descripcion</p>
+              <div class="flex">
+                <span>tecnologías</span>
+                <span>tecnologías</span>
+                <span>tecnologías</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- STACK TECNOLOGICO -->
+      <section>
+        <div>
+          <h2>Tecnologías.</h2>
+          <span
+            >Las herramientas que utilizo para dar vida a cada proyecto.</span
+          >
+        </div>
+
+        <!-- GRID CONTAINER -->
+        <div class="grid grid-cols-3">
+          <div class="flex flex-col">ITEM</div>
+          <div class="flex flex-col">ITEM</div>
+          <div class="flex flex-col">ITEM</div>
+          <div class="flex flex-col">ITEM</div>
+          <div class="flex flex-col">ITEM</div>
+          <div class="flex flex-col">ITEM</div>
+          <div class="flex flex-col">ITEM</div>
+          <div class="flex flex-col">ITEM</div>
+          <div class="flex flex-col">ITEM</div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- CONTACTAME -->
+      <section>
+        <!-- TEXTOS -->
+        <div>
+          <span>03 / HAGAMOS ALGO BUENO </span>
+          <h2>Contáctame.</h2>
+          <span>¿Tienes una idea en mente? Me encantaría conocerla. </span>
+          <span>Tu próximo proyecto empieza con un hola.</span>
+          <span>
+            Cuéntame sobre tu proyecto, una oportunidad de colaboración o
+            simplemente salúdame. Construyamos algo que marque la diferencia.
+          </span>
+          <div>
+            <span>git</span>
+            <span>in</span>
+            <span>ig</span>
+          </div>
+        </div>
+
+        <div>
+          <form action="#">
+            <div>
+              <label for="nombre">Tu nombre</label>
+              <input
+                type="text"
+                name="nombre"
+                id=""
+                placeholder="Como te llamas"
+              />
+              <label for="nombre">Correo electronico</label>
+              <input
+                type="text"
+                name="nombre"
+                id=""
+                placeholder="hola@ejemplo.com"
+              />
+            </div>
+            <div>
+              <label for="nombre">Asunto</label>
+              <input
+                type="text"
+                name="nombre"
+                id=""
+                placeholder="Tengo un proyecto en mente..."
+              />
+            </div>
+            <div>
+              <label for="nombre">Tu mensaje</label>
+              <textarea
+                name=""
+                id=""
+                placeholder="Cuentam un poco más sobre tu idea..."
+              ></textarea>
+              <button>Enviar mensaje</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <hr />
+
+    <footer>
+      <span>&copy; 2026 Daikell Dominguez</span
+      ><span>Hecho con pasión y un poco de codigo</span
+      ><span>Volver al inicio</span>
+    </footer>
+  </body>
 </html>
