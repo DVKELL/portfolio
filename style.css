@@ -3,8 +3,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --principal-bg: #1a1b21;
-  --azul-enfasis: #38bdf8;
-  --blanco: #fff;
+  --principal-bg: #07080a;
+  --secundario-bg: #0f1113;
+  --tercer-bg: #20242b;
+  --verde-neon: #abf201;
+  --verde-oscuro: #060b02;
+  --cyan-neon: #28d6df;
+  --borde-color: #292b2f;
+  --text-blanco: #f0f2f4;
+  --text-gris: #8b8f97;
   --text-body: #e2e2e9;
 }
