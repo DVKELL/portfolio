@@ -30,16 +30,19 @@
     ></script>
   </head>
 
-  <body class="h-screen bg-(--principal-bg) text-(--text-blanco)">
+  <body class="min-h-screen bg-(--principal-bg) text-(--text-blanco)">
     <!-- BARRA DE NAVEGACION -->
-    <header class="w-full border-b border-b-(--borde-color) sticky">
-      <nav class="w-full flex justify-between max-w-250 mx-auto p-5 lg:px-0">
+    <header
+      class="w-full bg-(--principal-bg) border-b border-b-(--borde-color) sticky top-0 lg:px-8"
+    >
+      <nav
+        class="w-full flex justify-between max-w-280 mx-auto px-5 py-6.5 md:px-8 lg:px-0"
+      >
+      
         <!-- DIV DAIKELL.DEV -->
         <div class="flex items-center gap-2">
-          <span class="material-symbols-outlined text-(--cyan-neon)">
-            code_xml
-          </span>
-          <span class="font-semibold text-lg">
+          <i class="fa-solid fa-code text-(--cyan-neon) text-xl"></i>
+          <span class="font-semibold text-2xl -mt-0.75">
             daikell
             <span class="text-(--cyan-neon) font-bold">.dev</span></span
           >
@@ -95,43 +98,62 @@
       </nav>
     </header>
 
-    <main>
+    <main class="w-full max-w-280 p-5 md:px-8 xl:px-0 xl:mx-auto">
       <!-- SECCION SOBRE MI -->
-      <section>
-        <div>
-          <h1>Hola, soy Daikell. Desarrollador web</h1>
-          <p>Ideas que se convierten en experiencias.</p>
-          <p>
+      <section class="flex flex-col gap-5">
+        <div class="flex flex-col gap-5 md:w-[70%] xl:w-[60%] xl:gap-6.5">
+          <h1
+            class="font-semibold text-[40px] leading-13 md:text-7xl md:leading-20"
+          >
+            Hola, soy Daikell<span class="text-(--cyan-neon)"
+              >. Desarrollador web</span
+            >
+          </h1>
+          <p class="text-[18px]">Ideas que se convierten en experiencias.</p>
+          <p class="text-(--text-gris) text-[15px] leading-7 xl:max-w-[65%]">
             Me apasiona conectar diseño y tecnología para crear aplicaciones web
             intuitivas, funcionales y con personalidad. Cada línea de código es
             una oportunidad para construir algo mejor.
           </p>
 
-          <!-- EXPLORAR PROYECTOS Y HABLEMOS -->
-          <div>
-            <a href="#"
-              >Exporar proyectos
+          <!-- CTAS -->
+          <div
+            class="flex flex-col gap-2.5 items-start md:flex-row md:gap-3 md:text-sm"
+          >
+            <a
+              class="flex items-center gap-1.5 px-7 py-2 bg-(--cyan-neon) rounded-md text-black"
+              href="#"
+            >
+              Explorar proyectos
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="16px"
                 viewBox="48 -912 864 864"
                 width="16px"
-                fill="#8b8f97"
+                fill="#000"
               >
                 <path
                   d="m243-192-51-51 429-429H384v-72h360v360h-72v-237L243-192Z"
                 />
               </svg>
             </a>
-            <a href="#">
+            <a
+              class="flex items-center gap-1.5 px-7 py-2 rounded-md border border-(--borde-color)"
+              href="#"
+            >
               Hablemos
               <i class="fa-solid fa-arrow-right-long text-[16px]"></i>
             </a>
           </div>
 
           <!-- Encuentrame en -->
-          <div>
-            <span>Encuéntrame en git, in, ig</span>
+          <div class="text-(--text-gris)">
+            <span class="flex items-center gap-3.5">
+              Encuéntrame en
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </span>
           </div>
         </div>
 
@@ -340,7 +362,8 @@
     </main>
 
     <hr />
-
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <footer>
       <span>&copy; 2026 Daikell Dominguez</span
       ><span>Hecho con pasión y un poco de codigo</span
