@@ -33,12 +33,11 @@
   <body class="min-h-screen bg-(--principal-bg) text-(--text-blanco)">
     <!-- BARRA DE NAVEGACION -->
     <header
-      class="w-full bg-(--principal-bg) border-b border-b-(--borde-color) sticky top-0 lg:px-8"
+      class="w-full bg-(--principal-bg) border-b border-b-(--borde-color) sticky top-0 z-2 lg:px-8"
     >
       <nav
         class="w-full flex justify-between max-w-280 mx-auto px-5 py-6.5 md:px-8 lg:px-0"
       >
-      
         <!-- DIV DAIKELL.DEV -->
         <div class="flex items-center gap-2">
           <i class="fa-solid fa-code text-(--cyan-neon) text-xl"></i>
@@ -98,10 +97,14 @@
       </nav>
     </header>
 
-    <main class="w-full max-w-280 p-5 md:px-8 xl:px-0 xl:mx-auto">
+    <main class="w-full py-5">
       <!-- SECCION SOBRE MI -->
-      <section class="flex flex-col gap-5">
-        <div class="flex flex-col gap-5 md:w-[70%] xl:w-[60%] xl:gap-6.5">
+      <section
+        class="max-w-280 flex flex-col gap-5 px-5 md:px-8 md:flex-row lg:py-8 xl:px-0 xl:mx-auto"
+      >
+        <div
+          class="flex flex-col gap-5 md:flex-2 md:w-[70%] xl:w-[60%] xl:gap-6.5"
+        >
           <h1
             class="font-semibold text-[40px] leading-13 md:text-7xl md:leading-20"
           >
@@ -158,127 +161,371 @@
         </div>
 
         <!-- IMAGEN -->
-        <figure>
-          <img src="#" alt="foto mia" />
+        <figure class="flex-1">
+          <img
+            class="object-cover h-full w-full block"
+            src="#"
+            alt="foto mia"
+          />
         </figure>
       </section>
-      <hr />
+      <hr class="text-(--borde-color)" />
 
       <!-- PROYECTOS REALIZADOS -->
-      <section>
+      <section class="max-w-280 py-3.5 px-5 md:px-8 lg:py-8 xl:px-0 xl:mx-auto">
         <!-- TEXTOS -->
-        <div>
-          <div>
-            <span>---- 01 / Trabajo Seleccionado</span>
-            <h2>Proyectos realizados</h2>
-            <span>Una selección de ideas que llevé del concepto al código</span>
+        <div
+          class="flex flex-col items-start gap-7 mt-4 md:flex-row md:gap-0 md:justify-between"
+        >
+          <div class="flex flex-col gap-2.5">
+            <span class="text-[10px] text-(--cyan-neon) uppercase"
+              >01 / Trabajo Seleccionado</span
+            >
+            <h2 class="font-semibold text-[26px] md:text-[35px]">
+              Proyectos realizados<span class="text-(--cyan-neon)">.</span>
+            </h2>
+            <span class="text-[12px] text-(--text-gris) md:text-[14px]"
+              >Una selección de ideas que llevé del concepto al código</span
+            >
           </div>
-          <div>
-            <span>Todos los proyectos</span>
+          <div class="flex items-center gap-1 self-end">
+            <span class="text-(--cyan-neon) font-semibold text-sm">
+              Todos los proyectos
+            </span>
+            <svg
+              class="mt-0.5"
+              xmlns="http://www.w3.org/2000/svg"
+              height="16px"
+              viewBox="48 -912 864 864"
+              width="16px"
+              fill="#28d6df"
+            >
+              <path
+                d="m243-192-51-51 429-429H384v-72h360v360h-72v-237L243-192Z"
+              />
+            </svg>
           </div>
         </div>
 
         <!-- GRID CONTAINER -->
-        <div class="grid grid-cols-1">
-          <!-- ITEM -->
-          <div class="flex flex-col">
-            <figure>
-              <img src="#" alt="img del proyecto" />
+        <div class="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <!-- ITEM CV-->
+          <div
+            class="flex flex-col border border-(--borde-color) rounded-lg overflow-hidden hover:border-(--cyan-neon) transition hover:-translate-y-1"
+          >
+            <!-- IMAGEN -->
+            <figure
+              class="border-b border-b-(--borde-color) overflow-hidden min-h-50 max-h-62"
+            >
+              <img
+                class="object-cover h-full w-full block"
+                src="./assets/Proyectos/html.jpg"
+                alt="img del proyecto"
+              />
             </figure>
-            <div>
-              <span>tipo de proyecto</span>
-              <h3>Titulo</h3>
-              <p>descripcion</p>
-              <div class="flex">
-                <span>tecnologías</span>
-                <span>tecnologías</span>
-                <span>tecnologías</span>
+
+            <!-- DIV DE TEXTOS -->
+            <div class="flex flex-col gap-3 bg-(--secundario-bg) p-4 h-full">
+              <!-- TIPO DE PROYECTO -->
+              <span class="text-[10px] uppercase text-(--cyan-neon)">
+                Curriculum Vitae
+              </span>
+
+              <!-- TITULO E ICONO -->
+              <div class="flex items-center gap-1.5 cursor-pointer">
+                <h3 class="font-semibold text-xl">CV Estilo Harvard</h3>
+                <svg
+                  class="ml-auto self-end"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="48 -912 864 864"
+                  width="20px"
+                  fill="#fff"
+                >
+                  <path
+                    d="m243-192-51-51 429-429H384v-72h360v360h-72v-237L243-192Z"
+                  />
+                </svg>
+              </div>
+
+              <!-- DESCRIPCION -->
+              <p class="text-[13px] text-(--text-gris) leading-5">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
+                debitis numquam iure quibusdam tem
+              </p>
+
+              <!-- DIV DE TECNOLOGÍAS USADAS -->
+              <div class="flex items-end gap-2 flex-wrap mt-3 h-full">
+                <span
+                  class="flex items-center gap-1 bg-(--tercer-bg) text-xs text-(--text-gris) p-1.5 rounded-sm"
+                >
+                  HTML5
+                  <i class="fa-brands fa-html5 text-[15px]"></i>
+                </span>
               </div>
             </div>
           </div>
-          <div class="flex flex-col">
-            <figure>
-              <img src="#" alt="img del proyecto" />
+
+          <!-- ITEM CLON YT-->
+          <div
+            class="flex flex-col border border-(--borde-color) rounded-lg overflow-hidden hover:border-(--cyan-neon) transition hover:-translate-y-1"
+          >
+            <!-- IMAGEN -->
+            <figure
+              class="border-b border-b-(--borde-color) overflow-hidden min-h-50 max-h-62"
+            >
+              <img
+                class="object-cover h-full w-full block"
+                src="./assets/Proyectos/youtube.jpg"
+                alt="Clon de Youtube"
+              />
             </figure>
-            <div>
-              <span>tipo de proyecto</span>
-              <h3>Titulo</h3>
-              <p>descripcion</p>
-              <div class="flex">
-                <span>tecnologías</span>
-                <span>tecnologías</span>
-                <span>tecnologías</span>
+
+            <!-- DIV DE TEXTOS -->
+            <div class="flex flex-col gap-3 bg-(--secundario-bg) p-4 h-full">
+              <span class="text-xs uppercase text-(--cyan-neon)">
+                Clon de pagina web
+              </span>
+
+              <!-- TITULO E ICONO -->
+              <div class="flex items-center gap-1.5 cursor-pointer">
+                <h3 class="font-semibold text-xl">Clon de Youtube</h3>
+                <svg
+                  class="ml-auto self-end"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="48 -912 864 864"
+                  width="20px"
+                  fill="#fff"
+                >
+                  <path
+                    d="m243-192-51-51 429-429H384v-72h360v360h-72v-237L243-192Z"
+                  />
+                </svg>
+              </div>
+
+              <!-- DESCRIPCION -->
+              <p class="text-[13px] text-(--text-gris) leading-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatum laudantium neque voluptate accusamus! LOREM
+              </p>
+
+              <!-- DIV DE TECNOLOGÍAS USADAS -->
+              <div class="flex items-end gap-2 flex-wrap mt-3 h-full">
+                <span
+                  class="bg-(--tercer-bg) text-xs text-(--text-gris) p-1.5 rounded-sm"
+                >
+                  HTML5
+                  <i class="fa-brands fa-html5 text-[15px]"></i>
+                </span>
+                <span
+                  class="bg-(--tercer-bg) text-xs text-(--text-gris) p-1.5 rounded-sm"
+                >
+                  CSS3
+                  <i class="fa-brands fa-css3-alt"></i>
+                </span>
               </div>
             </div>
           </div>
-          <div class="flex flex-col">
-            <figure>
-              <img src="#" alt="img del proyecto" />
+
+          <!-- ITEM FYLO-->
+          <div
+            class="flex flex-col border border-(--borde-color) rounded-lg overflow-hidden hover:border-(--cyan-neon) transition hover:-translate-y-1"
+          >
+            <!-- IMAGEN -->
+            <figure
+              class="border-b border-b-(--borde-color) overflow-hidden min-h-50 max-h-62"
+            >
+              <img
+                class="object-cover h-full w-full block"
+                src="./assets/Proyectos/frontend-mentor.jpg"
+                alt=" Imagen del proyecto"
+              />
             </figure>
-            <div>
-              <span>tipo de proyecto</span>
-              <h3>Titulo</h3>
-              <p>descripcion</p>
-              <div class="flex">
-                <span>tecnologías</span>
-                <span>tecnologías</span>
-                <span>tecnologías</span>
+
+            <!-- DIV DE TEXTOS -->
+            <div class="flex flex-col gap-3 bg-(--secundario-bg) p-4 h-full">
+              <span class="text-xs uppercase text-(--cyan-neon)">
+                Practica de Frontend Mentor
+              </span>
+
+              <!-- TITULO E ICONO -->
+              <div class="flex items-center gap-1.5 cursor-pointer">
+                <h3 class="font-semibold text-xl">Landing Page Fylo</h3>
+                <svg
+                  class="ml-auto self-end"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="48 -912 864 864"
+                  width="20px"
+                  fill="#fff"
+                >
+                  <path
+                    d="m243-192-51-51 429-429H384v-72h360v360h-72v-237L243-192Z"
+                  />
+                </svg>
+              </div>
+
+              <!-- DESCRIPCION -->
+              <p class="text-[13px] text-(--text-gris) leading-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                exercitationem deserunt iste aspernatur?
+              </p>
+
+              <!-- DIV DE TECNOLOGÍAS USADAS -->
+              <div class="flex items-end gap-2 flex-wrap mt-3 h-full">
+                <span
+                  class="bg-(--tercer-bg) text-xs text-(--text-gris) p-1.5 rounded-sm"
+                >
+                  HTML5
+                  <i class="fa-brands fa-html5 text-[15px]"></i>
+                </span>
+                <span
+                  class="bg-(--tercer-bg) text-xs text-(--text-gris) p-1.5 rounded-sm"
+                >
+                  CSS3
+                  <i class="fa-brands fa-css3-alt"></i>
+                </span>
               </div>
             </div>
           </div>
-          <div class="flex flex-col">
-            <figure>
-              <img src="#" alt="img del proyecto" />
+
+          <!-- ITEM VIP TOOLS-->
+          <div
+            class="flex flex-col border border-(--borde-color) rounded-lg overflow-hidden hover:border-(--cyan-neon) transition hover:-translate-y-1"
+          >
+            <!-- IMAGEN -->
+            <figure
+              class="border-b border-b-(--borde-color) overflow-hidden min-h-50 max-h-62"
+            >
+              <img
+                class="object-cover h-full w-full block"
+                src="./assets/Proyectos/vip-tools.jpg"
+                alt=" Imagen del proyecto"
+              />
             </figure>
-            <div>
-              <span>tipo de proyecto</span>
-              <h3>Titulo</h3>
-              <p>descripcion</p>
-              <div class="flex">
-                <span>tecnologías</span>
-                <span>tecnologías</span>
-                <span>tecnologías</span>
+
+            <!-- DIV DE TEXTOS -->
+            <div class="flex flex-col gap-3 bg-(--secundario-bg) p-4 h-full">
+              <span class="text-xs uppercase text-(--cyan-neon)">
+                Creador de tickes & calculadora
+              </span>
+
+              <!-- TITULO E ICONO -->
+              <div class="flex items-center gap-1.5 cursor-pointer">
+                <h3 class="font-semibold text-xl">VIP TOOLS</h3>
+                <svg
+                  class="ml-auto self-end"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="48 -912 864 864"
+                  width="20px"
+                  fill="#fff"
+                >
+                  <path
+                    d="m243-192-51-51 429-429H384v-72h360v360h-72v-237L243-192Z"
+                  />
+                </svg>
+              </div>
+
+              <!-- DESCRIPCION -->
+              <p class="text-[13px] text-(--text-gris) leading-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                exercitationem deserunt iste aspernatur?
+              </p>
+
+              <!-- DIV DE TECNOLOGÍAS USADAS -->
+              <div class="flex items-end gap-2 flex-wrap mt-3 h-full">
+                <span
+                  class="bg-(--tercer-bg) text-xs text-(--text-gris) p-1.5 rounded-sm"
+                >
+                  HTML5
+                  <i class="fa-brands fa-html5 text-[15px]"></i>
+                </span>
+                <span
+                  class="bg-(--tercer-bg) text-xs text-(--text-gris) p-1.5 rounded-sm"
+                >
+                  CSS3
+                  <i class="fa-brands fa-css3-alt"></i>
+                </span>
+                <span
+                  class="bg-(--tercer-bg) text-xs text-(--text-gris) p-1.5 rounded-sm"
+                >
+                  JS
+                  <i class="fa-brands fa-square-js"></i>
+                </span>
               </div>
             </div>
           </div>
-          <div class="flex flex-col">
-            <figure>
-              <img src="#" alt="img del proyecto" />
+
+          <!-- ITEM EN STREAMLIT-->
+          <div
+            class="flex flex-col border border-(--borde-color) rounded-lg overflow-hidden hover:border-(--cyan-neon) transition hover:-translate-y-1"
+          >
+            <!-- IMAGEN -->
+            <figure
+              class="border-b border-b-(--borde-color) overflow-hidden min-h-50 max-h-62"
+            >
+              <img
+                class="object-cover h-full w-full block"
+                src="./assets/Proyectos/dashboardVIP.jpg"
+                alt=" Imagen del proyecto"
+              />
             </figure>
-            <div>
-              <span>tipo de proyecto</span>
-              <h3>Titulo</h3>
-              <p>descripcion</p>
-              <div class="flex">
-                <span>tecnologías</span>
-                <span>tecnologías</span>
-                <span>tecnologías</span>
+
+            <!-- DIV DE TEXTOS -->
+            <div class="flex flex-col gap-3 bg-(--secundario-bg) p-4 h-full">
+              <span class="text-xs uppercase text-(--cyan-neon)">
+                Dashboard
+              </span>
+
+              <!-- TITULO E ICONO -->
+              <div class="flex items-center gap-1.5 cursor-pointer">
+                <h3 class="font-semibold text-xl">Dashboard de Metricas VIP</h3>
+                <svg
+                  class="ml-auto self-end"
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="48 -912 864 864"
+                  width="20px"
+                  fill="#fff"
+                >
+                  <path
+                    d="m243-192-51-51 429-429H384v-72h360v360h-72v-237L243-192Z"
+                  />
+                </svg>
               </div>
-            </div>
-          </div>
-          <div class="flex flex-col">
-            <figure>
-              <img src="#" alt="img del proyecto" />
-            </figure>
-            <div>
-              <span>tipo de proyecto</span>
-              <h3>Titulo</h3>
-              <p>descripcion</p>
-              <div class="flex">
-                <span>tecnologías</span>
-                <span>tecnologías</span>
-                <span>tecnologías</span>
+
+              <!-- DESCRIPCION -->
+              <p class="text-[13px] text-(--text-gris) leading-5">
+                descripcion
+              </p>
+
+              <!-- DIV DE TECNOLOGÍAS USADAS -->
+              <div class="flex items-end gap-2 flex-wrap mt-3 h-full">
+                <span
+                  class="bg-(--tercer-bg) text-xs text-(--text-gris) p-1.5 rounded-sm"
+                >
+                  Python
+                  <i class="fa-brands fa-python"></i>
+                </span>
+                <span
+                  class="bg-(--tercer-bg) text-xs text-(--text-gris) p-1.5 rounded-sm"
+                >
+                  Streamlit
+                  <i class="fa-solid fa-web-awesome"></i>
+                </span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <hr />
+      <hr class="text-(--borde-color)" />
 
       <!-- STACK TECNOLOGICO -->
-      <section>
-        <div>
+      <section class="max-w-280 px-5 md:px-8 xl:px-0 xl:mx-auto">
+        <div class="">
           <h2>Tecnologías.</h2>
           <span
             >Las herramientas que utilizo para dar vida a cada proyecto.</span
@@ -299,10 +546,10 @@
         </div>
       </section>
 
-      <hr />
+      <hr class="text-(--borde-color)" />
 
       <!-- CONTACTAME -->
-      <section>
+      <section class="max-w-280 px-5 md:px-8 xl:px-0 xl:mx-auto">
         <!-- TEXTOS -->
         <div>
           <span>03 / HAGAMOS ALGO BUENO </span>
@@ -361,13 +608,13 @@
       </section>
     </main>
 
-    <hr />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <hr class="text-(--borde-color)" />
     <footer>
       <span>&copy; 2026 Daikell Dominguez</span
       ><span>Hecho con pasión y un poco de codigo</span
       ><span>Volver al inicio</span>
     </footer>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   </body>
 </html>
